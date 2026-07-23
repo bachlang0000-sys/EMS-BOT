@@ -26,6 +26,7 @@ client.once("ready", () => {
 
 
 client.on("interactionCreate", async interaction => {
+    console.log("Có lệnh:", interaction.commandName);
 
     if(!interaction.isChatInputCommand()) return;
 
